@@ -111,3 +111,44 @@
 
 # for i in range(len(t)):
 #     print(t[i])
+
+# СЛОВАРИ
+
+# d = {}     # пустой словарь
+# d = dict() # пустой словарь
+
+# d['q'] = 'qwerty' # создание словаря
+# print(d)          # вывод словаря
+
+# d['w'] = 'werty'
+# print(d)
+# print(d['q']) # вывод значения по ключу
+
+# dictionary = {}
+# dictionary = {'up': '↑', 'left': '←', 'down': '↓', 'right': '→'}
+# print(dictionary)
+# print(dictionary['left'])
+# print(dictionary['up'])
+
+# dictionary['down'] = '▼'
+# print(dictionary['down'])
+
+# # print(dictionary['type']) # KeyError: 'type'
+
+# del dictionary['left']
+# print(dictionary)
+
+# for item in dictionary:
+#     print('{}: {}'.format(item, dictionary[item]))
+# # или
+# # for(k, v) in dictionary.items():
+# #     print('{}: {}'.format(k, v))
+
+# for item in dictionary:
+#     print(item) # вывод ключей
+
+# вывод списка [...], где каждый элемент является кортежем из двух элементов,
+# 1-й - это ключ из словаря, 2-й - это значение из словаря
+# dictionary = {}
+# dictionary = {'up': '↑', 'left': '←', 'down': '↓', 'right': '→'}
+# print(dictionary.items())
