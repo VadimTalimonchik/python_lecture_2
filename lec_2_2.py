@@ -59,16 +59,55 @@
 # print(list_6)
 
 # Срезы в списках
-list_7 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-print(list_7[0])
-print(list_7[1])
-print(list_7[len(list_7) - 1])
-print(list_7[-1])
-print(list_7[-5])
-print(list_7[:])
-print(list_7[:2])
-print(list_7[len(list_7) - 2:])
-print(list_7[2:9])
-print(list_7[6:-18])
-print(list_7[0:len(list_7):6]) # от начала до конца с шагом 6
-print(list_7[::6])             # от начала до конца с шагом 6
+# list_7 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# print(list_7[0])
+# print(list_7[1])
+# print(list_7[len(list_7) - 1])
+# print(list_7[-1])
+# print(list_7[-5])
+# print(list_7[:])
+# print(list_7[:2])
+# print(list_7[len(list_7) - 2:])
+# print(list_7[2:9])
+# print(list_7[6:-18])
+# print(list_7[0:len(list_7):6]) # от начала до конца с шагом 6
+# print(list_7[::6])             # от начала до конца с шагом 6
+
+
+# КОРТЕЖ - неизменяемый список
+
+# t = () # создание пустого кортежа
+# print(type(t))
+
+# t = (1) # это НЕ кортеж
+# print(type(t))
+
+# t = (1,) # это кортеж
+# print(type(t))
+
+# преоброзование списка в кортеж
+# v = [1, 8, 9] # список
+# print(v)
+# print(type(v))
+
+# v = tuple(v)
+# print(v)
+# print(type(v))
+
+# # разделение кортежа на переменные (распаковка кортежа)
+# a, b, c = v
+# print(a, b, c)
+
+# сходство кортежа и списка
+
+# t = (1, 2, 3, 5,)
+
+# # print(t[2]) # вывод элемента кортежа по индексу
+
+# # for i in t: # с помощью цикла проходимся по всем элементам
+# #     print(i)
+
+# # следующий цикл работает как с кортежем так и со списком
+
+# for i in range(len(t)):
+#     print(t[i])
