@@ -152,3 +152,54 @@
 # dictionary = {}
 # dictionary = {'up': '↑', 'left': '←', 'down': '↓', 'right': '→'}
 # print(dictionary.items())
+
+# МНОЖЕСТВА
+
+# colors = {'red', 'green', 'blue'}
+# print(colors)
+# colors.add('red') # добавление значения в множества, если уже есть, то не добавит
+# print(colors)
+# colors.add('gray') # добавление значения в множества
+# print(colors)
+# colors.remove('red')
+# print(colors)
+# # colors.remove('red') # удаление элемента из множества
+# # print(colors) # KeyError: 'red', если такого значения нет, то выдаст ошибку
+# colors.discard('red') # проверка, если элемента нет, то выводит имеющееся множество
+# print(colors)
+# colors.discard('green') # проверка, если элемент есть, то его удоляет
+# print(colors)
+# colors.clear() # удоляет все элементы множества
+# print(colors)
+
+# q = set() # создание множества
+
+# операции со множествами
+
+# a = {1, 2, 3, 5, 8}
+# b = {2, 5, 8, 13, 21}
+# c = a.copy() # копирование одного множества в другое
+# print(c)
+# u = a.union(b) # объединение множеств a и b
+# print(u)
+# i = a.intersection(b) # пересечение множеств a и b
+# print(i)
+# dl = a.difference(b) # разность a из b
+# print(dl)
+# dr = b.difference(a) # разность b из a
+# print(dr)
+
+# q = a.union(b).difference(a.intersection(b))
+# print(q)
+# 1) находим пересечение a и b - (a.intersection(b))
+# 2) объединяем a и b - a.union(b)
+# 3) из полученного множества находим разность с этим
+#    множеством - a.union(b).difference(a.intersection(b))
+
+# создание "замороженного" множества, т.е. неизменяемое:
+# 1) создаём обычное множество;
+# 2) создаём замороженное множеста на основе созданного в 1-ом шаге.
+# a = {1, 8, 6}
+# b = frozenset(a)
+# print(b)
+
